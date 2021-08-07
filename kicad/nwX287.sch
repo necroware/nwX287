@@ -88,7 +88,7 @@ GND
 Text GLabel 4950 3450 0    50   Input ~ 0
 GND
 Text GLabel 3450 2350 0    50   Input ~ 0
-MOT
+VOUT
 Text GLabel 3450 2650 0    50   Input ~ 0
 AD0
 Text GLabel 3450 2750 0    50   Input ~ 0
@@ -122,7 +122,7 @@ AD6
 Text GLabel 4950 3350 0    50   Input ~ 0
 AD7
 Text GLabel 4950 2350 0    50   Input ~ 0
-MOT
+VOUT
 $Comp
 L Device:Battery_Cell BT1
 U 1 1 60A1174E
