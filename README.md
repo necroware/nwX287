@@ -1,4 +1,4 @@
-# Necroware's NW12887 RTC module
+# Necroware's nwX287 RTC module
 
 ![photo](./images/top.jpg)
 
