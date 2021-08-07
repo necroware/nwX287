@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L nw12887:bq4285 U2
+L nwX287:bq4285 U2
 U 1 1 60A068FA
 P 3850 2300
 F 0 "U2" H 3850 2475 50  0000 C CNN
@@ -25,7 +25,7 @@ F 3 "" H 3850 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L nw12887:bq4285 U1
+L nwX287:bq4285 U1
 U 1 1 60A06FF2
 P 5350 2300
 F 0 "U1" H 5350 2475 50  0000 C CNN
