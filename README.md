@@ -9,11 +9,14 @@ With empty battery BIOS settings can not be saved and so many mainboards can't
 even boot properly. This alternative solution has a socket for CR1225 and the
 battery can be easily replaced again, when it gets empty. This module can be
 used with BQ3285, BQ4285 or pin compatible RTC chips, dependent on the
-requirements.
+requirements. This module was tested only with the named ICs, but it should be
+also compatible with DS1385, which has additional 2KB of NVRAM and was used on
+many microchannel and EISA mainboards.
 
 This part should be compatible with following RTC modules:
 
 * Dallas DS1287 / DS12887 / DS12B887 (using BQ3285)
+* Dallas DS1387 (using DS1385, untested so far)
 * Benchmarq BQ3287 (using BQ3285)
 * Benchmarq BQ4287 (using BQ4285)
 * ODIN OEC12C887 (using BQ3285)
