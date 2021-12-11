@@ -15,12 +15,12 @@ many microchannel and EISA mainboards.
 
 This part should be compatible with following RTC modules:
 
-* Dallas DS1287 / DS12887 / DS12B887 (using BQ3285)
+* Dallas DS1287 / DS12887 / DS12B887 (using BQ3285 or DS12885)
 * Dallas DS1387 (using DS1385, untested so far)
-* Dallas DS14287 (using DS14285)
-* Benchmarq BQ3287 (using BQ3285)
-* Benchmarq BQ4287 (using BQ4285)
-* ODIN OEC12C887 (using BQ3285)
+* Dallas DS14287 (using DS14285 or BQ4285)
+* Benchmarq BQ3287 (using BQ3285 or DS12885)
+* Benchmarq BQ4287 (using BQ4285 or DS14285)
+* ODIN OEC12C887 (using BQ3285 or DS12885)
 
 ## Remarks to the used RTC chips
 
