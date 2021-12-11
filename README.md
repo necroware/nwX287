@@ -15,18 +15,23 @@ many microchannel and EISA mainboards.
 
 This part should be compatible with following RTC modules:
 
-* Dallas DS1287 / DS12887 / DS12B887 (using BQ3285 or DS12885)
+* Dallas DS1287 / DS12887 / DS12B887 (using BQ3285)
 * Dallas DS1387 (using DS1385, untested so far)
-* Dallas DS14287 (using DS14285 or BQ4285)
-* Benchmarq BQ3287 (using BQ3285 or DS12885)
-* Benchmarq BQ4287 (using BQ4285 or DS14285)
-* ODIN OEC12C887 (using BQ3285 or DS12885)
+* Dallas DS14287 (using BQ4285)
+* Benchmarq BQ3287 (using BQ3285)
+* Benchmarq BQ4287 (using BQ4285)
+* ODIN OEC12C887 (using BQ3285)
 
 ## Remarks to the used RTC chips
 
 Pay attention, which RTC IC you need. Most of the mainboards with an RTC module
 need BQ3285, but some EISA mainboards require BQ4285 with chip enable signaling
-on pins 21/22 to control external memory.
+on pins 21/22 to control external memory. The Benchmarq ICs are easier to find
+today, that's why they are proposed, but there are some compatible ICs existing
+which can be used instead as well:
+
+* Benchmarq BQ3285 = Dallas DS12885
+* Benchmarq BQ4285 = Dallas DS14285
 
 ## Cutting the module pins
 
