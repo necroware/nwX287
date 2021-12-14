@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "nwX287"
-Date "2021-06-15"
+Date "2021-12-14"
 Rev "1"
 Comp "Necroware"
 Comment1 "by Scorp"
@@ -18,7 +18,7 @@ L nwX287:bq4285 U2
 U 1 1 60A068FA
 P 3850 2300
 F 0 "U2" H 3850 2475 50  0000 C CNN
-F 1 "bq4285" H 3850 2384 50  0000 C CNN
+F 1 "socket" H 3850 2384 50  0000 C CNN
 F 2 "Package_DIP:DIP-24_W15.24mm_Socket" H 3850 2350 50  0001 C CNN
 F 3 "" H 3850 2350 50  0001 C CNN
 	1    3850 2300
