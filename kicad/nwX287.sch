@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "nwX287"
-Date "2021-12-14"
-Rev "1"
+Date "2021-12-15"
+Rev "1a"
 Comp "Necroware"
 Comment1 "by Scorp"
 Comment2 ""
@@ -128,8 +128,8 @@ L Device:Battery_Cell BT1
 U 1 1 60A1174E
 P 6350 1700
 F 0 "BT1" H 6468 1796 50  0000 L CNN
-F 1 "CR2025" H 6468 1705 50  0000 L CNN
-F 2 "nw12887:BatteryHolder_CR1220" V 6350 1760 50  0001 C CNN
+F 1 "CR1220" H 6468 1705 50  0000 L CNN
+F 2 "nwX287:BatteryHolder_CR1220" V 6350 1760 50  0001 C CNN
 F 3 "~" V 6350 1760 50  0001 C CNN
 	1    6350 1700
 	1    0    0    -1  
