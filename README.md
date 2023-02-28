@@ -35,6 +35,9 @@ which can be used instead as well:
 
 ## Cutting the module pins
 
+*Important:* some mainboards seem to use /RCL pin 21, so cut it first if you are
+sure, that your mainboard doesn't use it.
+
 Dependent on which RTC chip you are using you have to cut off some pins on the
 module. If you are using BQ3285, you need to remove pins 2,3,16,20,21,22. When
 using BQ4285 you need to remove pins 2,3,16,20.
