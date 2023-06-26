@@ -35,6 +35,13 @@ which can be used instead as well:
 * Benchmarq BQ3285 = Dallas DS12885
 * Benchmarq BQ4285 = Dallas DS14285
 
+This module can be also used as a replacement for the Hitachi HD146818P RTC chip
+which was not only used in many PC mainboards, but also in other devices and home
+computers like the __BBC Master__. On some devices the pin 1 has to be pulled up
+to pin 24 (VCC, Motorola Mode) or down to pin 12 (Ground, Intel Mode) using a 10k
+resistor. This was tested by Adrian on his YT channel (he used a simple bodge wire,
+but it's safer to use a resistor: https://youtu.be/2Sgleturods?t=2970)
+
 ## Cutting the module pins
 
 *Important:* some mainboards seem to use /RCL pin 21, so cut it first if you are
