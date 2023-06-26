@@ -22,6 +22,8 @@ This part should be compatible with following RTC modules:
 * Benchmarq BQ4287 (using BQ4285)
 * ODIN OEC12C887 (using BQ3285)
 
+Video: https://www.youtube.com/watch?v=svPNxILeQEw
+
 ## Remarks to the used RTC chips
 
 Pay attention, which RTC IC you need. Most of the mainboards with an RTC module
