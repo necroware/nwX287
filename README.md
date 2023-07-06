@@ -35,12 +35,33 @@ which can be used instead as well:
 * Benchmarq BQ3285 = Dallas DS12885
 * Benchmarq BQ4285 = Dallas DS14285
 
-This module can be also used as a replacement for the Hitachi HD146818P RTC chip
-which was not only used in many PC mainboards, but also in other devices and home
-computers like the __BBC Master__. On some devices the pin 1 has to be pulled up
-to pin 24 (VCC, Motorola Mode) or down to pin 12 (Ground, Intel Mode) using a 10k
-resistor. This was tested by Adrian on his YT channel (he used a simple bodge wire,
-but it's safer to use a resistor: https://youtu.be/2Sgleturods?t=2970)
+### Motorola and Intel Bus Modes
+
+This module can also be used as a replacement for the Motorola MC146818 RTC chip
+and compatibles. The MC146818 was used as the RTC and CMOS storage element in
+the IBM PC AT and has been extensively cloned, or many compatible chips made as
+alternatives (e.g. the ubiquitous Dallas 128x RTC modules found on many PC
+mainboards).
+
+Depending on your exact system requirements, the function of pin 1 may be
+configured through the use of two solder bridges per the following table:
+
+| JP1 | JP2 | RTC pin 1 is ... |
+|-|-|-|
+| 1-2 | Don't care | connected directly to socket pin 1 (default) |
+| 2-3 | 2-3 | pulled DOWN to ground for Intel bus mode |
+| 2-3 | 1-2 | pulled UP to VCC for Motorola bus mode |
+
+Note: JP1 pins 1-2 are bridged from the factory to maintain compatability with
+any external functionality or signalling, so a small cut must be made between
+these two pads to unbridge them if you intend to pull up or down via JP2.
+*__!!! Test for continuity between adjacent pads to ensure all cuts are clean
+and that solder bridges do not make unintentional connections before installing
+the module in your computer or device !!!__*
+
+Adrian Black of Adrians Digital Basement tested the Motorola bus mode (using a
+bodge wire) as a replacement for a Hitachi HD146818 for use in a BBC Master in a
+video on his channel: https://youtu.be/2Sgleturods?t=2970
 
 ## Cutting the module pins
 
