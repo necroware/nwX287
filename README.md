@@ -54,6 +54,23 @@ using BQ4285 you need to remove pins 2,3,16,20.
 ![photo](./images/pinout.jpg)
 ![photo](./images/bottom.jpg)
 
+## Force Motorola / Intel mode
+
+The BQ3285 and most of the compatible chips can work in two modes Motorola and
+Intel. The Motorola mode was usually used on home computers with Motorola CPU
+and on x86 compatible PCs used the Intel mode. The BQ3285 and most compatible
+chips have auto detection feature for the mode. If pin 1 is pulled high, then
+the chip will work in Motorola mode and if it is set to low, then the Intel
+mode is selected. Unfortunately very old systems used original RTC chips, where
+the pin 1 was floating and the chips were hard wired internally to be always
+either in Motorola or Intel mode. On this nwX287 replacement module pin 1 on
+the PCB is connected to the pin 1 of the chip, so the mode selection should
+work, however if accordant connection on the mainboard is floating, the chip
+will go into the default mode, which is Intel. That will be a problem on older
+systems, which expect the chip to be in Motorola mode. Therefore an optional
+jumper was introduced on the module to force a particular mode if needed. If
+the module is not workin in your system, try to put a solder blob as required.
+
 ## Bill of Materials
 
 Part | # | Description
