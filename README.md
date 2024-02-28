@@ -21,6 +21,7 @@ This part should be compatible with following RTC modules:
 * Benchmarq BQ3287 (using BQ3285)
 * Benchmarq BQ4287 (using BQ4285)
 * ODIN OEC12C887 (using BQ3285)
+* VIA VT82887 (using BQ3285)
 
 Video: https://www.youtube.com/watch?v=svPNxILeQEw
 
